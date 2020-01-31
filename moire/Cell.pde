@@ -1,9 +1,11 @@
 class Cell{
+  int size;
   int x;
   int y;
   int r, g, b;
   
-  public Cell(int x, int y, int r, int g, int b) {
+  public Cell(int size, int x, int y, int r, int g, int b) {
+    this.size = size;
     this.x = x;
     this.y = y;
     this.r = r;
@@ -13,6 +15,6 @@ class Cell{
   
   void show() {
     fill(r, g, b);
-    rect(x, y, 10, 10);
+    rect(x, y, size, size);
   }
 }
