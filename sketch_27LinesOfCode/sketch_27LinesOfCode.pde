@@ -20,8 +20,8 @@ void drawPoint(float x, float y, float noiseFactor){
   pushMatrix();
   translate(x*noiseFactor * 4, y * noiseFactor * 4, -y);
   float edgeSize = noiseFactor * 26;
-  fill(0);
-  stroke(255);
+  fill(255);
+  //stroke(255);
   ellipse(0, 0, edgeSize, edgeSize);
   popMatrix();
 }
