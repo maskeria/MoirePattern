@@ -1,6 +1,6 @@
 void setup() {
-  size(1000, 1000, P3D);
-  background(200);
+  size(2000, 2000, P3D);
+  background(50);
   stroke(0, 50);
   fill(255, 200);
   float xstart = random(10);
@@ -24,4 +24,9 @@ void drawPoint(float x, float y, float noiseFactor){
   //stroke(255);
   ellipse(0, 0, edgeSize, edgeSize);
   popMatrix();
+}
+void keyPressed() {
+  if (keyCode == ENTER) {
+    saveFrame("screen-####.jpg");
+  }
 }
